@@ -26,7 +26,7 @@ class SneakingTurtle:
 
     def sneak(self, msg):
         rospy.logerr(msg)
-        if abs(self._x - msg.x) < distance and abs(self._y - msg.y) < distance:
+        if not abs(self._x - msg.x) < distance or not abs(self._y - msg.y) < distance:
             self._publisher.publis(self.create_message(msg))
 
     def create_message(self, msg):
