@@ -1,2 +1,3 @@
 # ROS_TASK5
-Sneaking Turtle
+lr0: Sneaking Turtle
+lr1: Laser scan
